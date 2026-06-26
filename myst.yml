@@ -1,0 +1,55 @@
+version: 1
+project:
+  title: Poor Little Kid's Space 
+  thumbnail: thumbnails/Rtrain.png
+  keywords: python, Jupyter notebook, machine learning, scikit, pyEphem, astronomy, Rubin observatory, Data Preview 1, DP1
+  authors:
+    - name: 穷孩子 Mary PW Chin
+  copyright: Mary PW Chin
+  toc:
+    - file: index.md
+    - title: Machine Learning
+      children:
+        - pattern: machine_learning/*.ipynb
+    - title: Rubin Observatory
+      children:
+      - file: md/rubin.md
+      - file: rubin/tutorials_summary.ipynb
+      - file: rubin/LSSTComCam_fields.ipynb
+      - file: rubin/astropy_fits_open.ipynb
+      - file: rubin/butler_deep_coadd.ipynb
+      - file: rubin/TAPdescribe_date.ipynb
+      - file: rubin/TAPdescribe_pre.ipynb
+      - file: rubin/TAPjoin.ipynb
+      - file: rubin/TAPmoving.ipynb
+      - file: rubin/TAPqueries.ipynb
+    - title: PyEphem Library
+      children:
+      - file: ipynb/pyephem/datetime_zoneinfo.ipynb	
+      - file: ipynb/pyephem/RA_dec_units.ipynb
+      - file: ipynb/pyephem/elongation.ipynb
+    - file: md/about.md
+site:
+  template: book-theme
+  title: Poor Little Kid 穷孩子 
+  nav:
+    - title: Home
+      url: /.
+    - title: Raw Reverence
+      url: /raw
+    - title: Third Camp
+      url: /thirdcamp
+    - title: Simply Wired
+      url: /wired
+    - title: Some Science
+      url: /science
+    - title: About
+      url: /about
+  parts:
+    footer: md/footer.md
+    primary_sidebar_footer: md/primary_sidebar_footer.md
+  options:
+    favicon: favicon.ico
+    logo: fig/qhz6_hori.png
+    style: ./level0.css
+    analytics_google: G-6J1P45HDP5
